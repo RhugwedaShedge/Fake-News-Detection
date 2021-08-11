@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- <div class="container-1">
+        <div class="heading-1"><h1>Fake News Prediction</h1></div>
+        <div class="form">
+            <form method="POST" action="">
+                {% csrf_token %}
+                <input name="news" type="text" value="" placeholder="Enter the news here">
+                <input type="submit" value="submit">
+            </form>
+        </div>
+        <div class="prediction">
+            <p>{{ news }}</p>
+        </div>
+    </div> -->
+
+    <section id="contact" class="contact section-bg">
+        <div class="container">
+    
+            <div class="row" data-aos="fade-in">
+                
+    
+                <div class="col-lg-5 d-flex align-items-stretch">
+                    <div class="info">
+                        <div class="section-title">
+                            <h1>Fake News Detection</h1>
+                        </div>
+                        <div class="address">
+                            <!-- <i class="bi bi-geo-alt"></i> -->
+                            <h3>Not Sure Whether the News is Fake or True?</h3>
+                            <h4>Paste the news below and check</h4>
+                            <!--<p>Mumbai, Maharashtra</p> -->
+                            <div class="form">
+                                <form method="POST" action="">
+                                    {% csrf_token %}
+                                    <!-- <input name="news" type="text" value="" placeholder="Enter the news here" size=50px> -->
+                                    <textarea name="news" type="text" value="" placeholder="Enter the news here" rows="5" cols="60" name="comment"></textarea>
+                                    <div>
+                                        <button class="btn" type="submit" value="submit">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="prediction">
+                                <p>{{ news }}</p>
+                            </div>
+                        </div>
+                    </div>   
+                </div>    
+            </div>    
+        </div>
+    </section>
+</body>
+</html>
+
+
